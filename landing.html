@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Cozy Reading Spot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            background: linear-gradient(to bottom, #fff7e6, #ffe0cc);
+            color: #333;
+        }
+
+        .header {
+            background-color: #ff704d;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 2.8em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .header:hover {
+            background-color: #e65c3a;
+            color: #ffdd99;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #e65c3a;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ff704d;
+            border-radius: 5px;
+        }
+
+        .main {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffebd9;
+        }
+
+        .main h1 {
+            font-size: 3em;
+            color: #d94515;
+            margin-bottom: 30px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .main h1:hover {
+            color: #ff704d;
+            transform: scale(1.1);
+        }
+
+        .main p {
+            font-size: 1.5em;
+            color: #663300;
+            margin: 20px auto;
+            line-height: 1.8;
+            max-width: 800px;
+            text-align: justify;
+        }
+
+        .cta-button {
+            padding: 15px 40px;
+            background-color: #ff944d;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.3em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e67339;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            background-color: #993d00;
+            color: #ffdab3;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1em;
+        }
+
+        a {
+            color: #ff8000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffe6cc;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 2.2em;
+            color: #b35900;
+            margin-bottom: 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .section h2:hover {
+            color: #ff6600;
+            transform: scale(1.05);
+        }
+
+        .section p {
+            font-size: 1.4em;
+            color: #663300;
+            line-height: 1.8;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Your Cozy Reading Spot</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#fiction">Fiction</a>
+        <a href="#nonfiction">Non-Fiction</a>
+        <a href="#selfhelp">Self-Help</a>
+        <a href="#academic">Academic</a>
+        <a href="#childrens">Children's</a>
+        <a href="#helpdesk">Help Desk</a>
+    </div>
+
+    <div class="main">
+        <h1>Find Your Next Favorite E-Book</h1>
+        <p>Hey there! Welcome to your ultimate e-book haven. Whether you're in the mood for a thrilling novel, practical advice, or a kid-friendly tale, we’ve got you covered. Grab a cup of coffee, and let's get reading!</p>
+        <div class="image-container">
+            <img src="ebook.jpg" alt="A person reading an e-book on a tablet">
+        </div>
+        <button class="cta-button" onclick="displayMessage()">Explore Now</button>
+    </div>
+
+    <div class="section" id="fiction">
+        <h2>Fiction</h2>
+        <p>Step into worlds of adventure, love, and mystery. Our fiction collection is filled with gripping tales that will keep you turning the pages!</p>
+    </div>
+
+    <div class="section" id="nonfiction">
+        <h2>Non-Fiction</h2>
+        <p>Want to learn something new? Discover real-life stories, fascinating insights, and knowledge to enrich your understanding of the world.</p>
+    </div>
+
+    <div class="section" id="selfhelp">
+        <h2>Self-Help</h2>
+        <p>Find inspiration and guidance to be the best version of yourself. Our self-help books are here to motivate and uplift you.</p>
+    </div>
+
+    <div class="section" id="academic">
+        <h2>Academic</h2>
+        <p>Boost your learning journey with resources crafted for students, educators, and professionals. Explore our academic e-books today!</p>
+    </div>
+
+    <div class="section" id="childrens">
+        <h2>Children's Books</h2>
+        <p>Light up young minds with delightful stories and fun adventures. Our children's e-books are a perfect blend of entertainment and education.</p>
+    </div>
+
+    <div class="section" id="helpdesk">
+        <h2>Help Desk</h2>
+        <p>Need assistance? Don't hesitate to reach out. We’re here to help you make the most of your reading experience.<br>
+        Email: friendlysupport@ebookhaven.fake<br>
+        Phone: +1 (555) 987-6543<br>
+        Address: 456 Cozy Nook, Booktown, Readersville</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Cozy Reading Spot. Thanks for visiting—happy reading! <a href="#">Privacy Policy</a></p>
+    </div>
+
+    <script>
+        function displayMessage() {
+            alert('Excited to dive into a great read? Let’s get started!');
+        }
+    </script>
+</body>
+</html>

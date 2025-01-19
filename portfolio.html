@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background-color: #3b4c63;
+            padding: 15px 0;
+            list-style: none;
+            margin-bottom: 40px;
+            border-radius: 20px;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #5f9ea0;
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+            color: #2d3e50;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        #contact a {
+            color: #2d3e50;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        #contact a:hover {
+            color: #5f9ea0;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 2.4rem;
+            }
+
+            section {
+                padding: 30px;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+
+            ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Snehangshu Mahapatra</h1> 
+        <p>Full Stack Developer with a passion for solving problems through code</p> 
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Who Am I?</a></li>
+            <li><a href="#skills">What I Do</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Who Am I?</h2>
+        <p>I’m a curious and dedicated developer with a knack for building things that make a difference. Currently, I’m diving deep into web development, refining my skills to create impactful and user-friendly applications. Let’s connect if you share a love for all things coding!</p>
+    </section>
+
+    <section id="skills">
+        <h2>What Can I Do?</h2>
+        <ul>
+            <li>JavaScript (React, Node.js)</li>
+            <li>Java (Spring Boot, Hibernate)</li>
+            <li>Python (Django, Flask)</li>
+            <li>SQL, NoSQL Databases</li>
+            <li>C, C++</li>
+        </ul>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Led my team to victory in the "CodeSprint 2024" Hackathon, creating an AI-driven solution for real-time data visualization.</li>
+            <li>Earned "React Developer of the Year" by DevTech Academy for building scalable and dynamic web applications.</li>
+            <li>Ranked in the top 10 of the "AlgoMaster Coding Challenge 2023," tackling complex algorithmic problems with creativity.</li>
+            <li>Surpassed 500 coding challenges on HackerRank, focusing on problem-solving and efficient coding practices.</li>
+            <li>Recognized with the "Open Source Contributor Award" for meaningful contributions to GitHub projects supporting education tech.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project Tracker Pro:</strong> A task management application built with React and Node.js. I implemented real-time collaboration features and custom analytics dashboards to enhance team productivity.</li>
+            <li><strong>Foodie Finder:</strong> A web app using Python and Flask to locate and review restaurants. I integrated geolocation and personalized recommendation features to improve user engagement.</li>
+            <li><strong>EcoMarket:</strong> An e-commerce platform promoting eco-friendly products. Developed with Spring Boot and Angular, I focused on creating a seamless shopping experience with advanced search filters.</li>
+            <li><strong>EduLearn:</strong> An interactive learning platform built with Django, featuring gamified content and comprehensive user progress tracking to enhance the learning experience.</li>
+            <li><strong>HealthAI:</strong> A chatbot for medical advice and symptom checking, powered by TensorFlow and Flask. My focus was on natural language processing and delivering accurate, user-friendly interactions.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch with Me</h2>
+        <p>Email: snehangshumahapatra1@gmail.com</p> 
+        <p>Phone: 86170-16853</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/snehangshu-mahapatra-228086267/" target="_blank" rel="noopener noreferrer">My LinkedIn</a></p> 
+        <p>GitHub: <a href="https://github.com/Snehangshu-mahapatra" target="_blank" rel="noopener noreferrer">My GitHub</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Snehangshu Mahapatra. All rights reserved.</p>
+    </footer>
+</body>
+</html>
