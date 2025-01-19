@@ -1,3 +1,3 @@
 Task 1: Portfolio
-Task 2: Landing page ( contains the image ebook.jpg )
-Task 3: Calculator
+Task 2: Calculator
+Task 3: Landing page ( contains the image ebook.jpg )
